@@ -1,5 +1,11 @@
+# zsh config
+alias zshconfig="nano ~/.zshrc"
+
 # cat -> bat
+alias ll='eza -al'
+alias l='eza --sort=size -ral --total-size'
 alias cat=bat
+alias yolo1='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 
 # cd aliases
 alias ..="cd .."
@@ -9,7 +15,7 @@ alias ...="cd ../.."
 alias pg='ps aux | grep -v grep | grep $1'
 
 # timestamp
-alias timestamp='date -j -f "%a %b %d %T %Z %Y" "`date`" "+%s"'
+alias timestamp='date -u "+%s"'
 
 # pdf -> jpg
 ptj() {
@@ -25,6 +31,7 @@ plugins=(
         git
         zsh-autosuggestions
         sudo
-        dotenv
-        poetry
+        brew
+        # dotenv
+        # poetry
 )

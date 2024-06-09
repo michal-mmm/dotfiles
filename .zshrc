@@ -1,5 +1,9 @@
+# starship
+eval "$(starship init zsh)"
+
 # zsh config
 alias zshconfig="nano ~/.zshrc"
+alias starshipconfig="nano ~/.config/starship.toml"
 
 # cat -> bat
 alias ll='eza -al'
@@ -25,13 +29,3 @@ ptj() {
   echo $command
   $command
 }
-
-# zsh plugins
-plugins=(
-        git
-        zsh-autosuggestions
-        sudo
-        brew
-        # dotenv
-        # poetry
-)

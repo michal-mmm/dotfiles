@@ -1,0 +1,23 @@
+# shell
+shell-integration = zsh
+# command = shell_path
+
+# starting directory
+# working-directory = fill me
+window-inherit-working-directory = false
+window-save-state = never
+
+# starting window
+window-height = 20
+window-width = 100
+
+# font
+theme = catppuccin-mocha
+font-size = 14
+font-family = "FiraCode Nerd Font Mono"
+adjust-cell-height = 20%
+
+# other
+quit-after-last-window-closed = true
+mouse-hide-while-typing = true
+window-decoration = true
